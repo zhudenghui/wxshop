@@ -2,12 +2,14 @@
 
 namespace app\lib\exception;
 
-class BaseException{
+use Exception;
 
-    public $code;
+class BaseException extends Exception{
 
-    public $msg;
+    public $code=400;
 
-    public $errorCode;
+    public $msg="参数错误";
+
+    public $errorcode="10000";
 
 }
